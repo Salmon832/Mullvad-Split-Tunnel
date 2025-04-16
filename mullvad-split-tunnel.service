@@ -6,8 +6,8 @@ Wants=network-online.target
 [Service]
 ExecStart=/usr/local/bin/split-tunnel.sh
 Restart=always
-User=finn
-Group=finn
+User=USERNAME HERE
+Group=USERNAME HERE
 
 [Install]
 WantedBy=multi-user.target
