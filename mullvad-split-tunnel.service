@@ -1,0 +1,13 @@
+[Unit]
+Description=Automatically Add certain processes to Mullvad Split Tunnel
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/split-tunnel.sh
+Restart=always
+User=finn
+Group=finn
+
+[Install]
+WantedBy=multi-user.target
